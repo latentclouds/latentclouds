@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img class="company-logo" alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome! This site is under construction." />
+    <HelloWorld msg="This site is under construction." />
   </div>
 </template>
 
