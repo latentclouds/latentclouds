@@ -3,9 +3,11 @@
     <h1>{{ msg }}</h1>
     <p>
       We apologise for the inconvenience, We'll be back up soon!<br />
-      In the meanwhile, you can email us at <a href="mailto:info@latentclouds.com" target="_blank" rel="noopener" >info@latentclouds.com</a>
+      In the meanwhile, you can email us at
+      <a href="mailto:info@latentclouds.com" target="_blank" rel="noopener"
+        >info@latentclouds.com</a
+      >
     </p>
-
   </div>
 </template>
 
