@@ -1,12 +1,18 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="hello-world">
+    <img class="company-logo" alt="company logo" src="@/assets/logo.png" />
+    <h1>{{ helloWorld.pageTitle }}</h1>
     <p>
-      We apologise for the inconvenience, We'll be back up soon!<br />
-      In the meanwhile, you can email us at
-      <a href="mailto:info@latentclouds.com" target="_blank" rel="noopener"
-        >info@latentclouds.com</a
+      <span
+        v-for="message in helloWorld.messages"
+        :key="message.id"
+        class="message"
       >
+        {{ message.text }}
+      </span>
+      <a :href="helloWorld.link.href" target="_blank" rel="noopener">
+        {{ helloWorld.link.text }}
+      </a>
     </p>
   </div>
 </template>
@@ -19,24 +25,53 @@ export default {
       type: String,
       default: ''
     }
+  },
+  data: function () {
+    return {
+      helloWorld: {
+        pageTitle: this.msg,
+        messages: [
+          {
+            id: 1,
+            text: 'We apologise for the inconvenience!'
+          },
+          {
+            id: 2,
+            text: 'We will be back up soon!'
+          },
+          {
+            id: 3,
+            text: 'In the meanwhile, you can email us at'
+          }
+        ],
+        link: {
+          href: 'mailto:info@latentclouds.com',
+          text: 'info@latentclouds.com'
+        }
+      }
+    }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style lang="scss">
+.hello-world {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+  .company-logo {
+    width: 200px;
+  }
+
+  .message {
+    &:not(:last-of-type) {
+      display: block;
+    }
+  }
+
+  a {
+    color: #42b983;
+  }
 }
 </style>
