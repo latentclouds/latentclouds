@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 // define routes
-const HomePage = () => import('../components/HomePage.vue')
+const HomePage = () => import('../components/routes/HomePage.vue')
 const GeneralErrorPage = () => import('../components/GeneralErrorPage.vue')
 
 const router = new VueRouter({

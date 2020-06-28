@@ -1,17 +1,13 @@
 <template>
-  <div class="hello-world">
+  <div class="index">
     <img class="company-logo" alt="company logo" src="@/assets/logo.png" />
-    <h1>{{ helloWorld.pageTitle }}</h1>
+    <h1>{{ index.pageTitle }}</h1>
     <p>
-      <span
-        v-for="message in helloWorld.messages"
-        :key="message.id"
-        class="message"
-      >
+      <span v-for="message in index.messages" :key="message.id" class="message">
         {{ message.text }}
       </span>
-      <a :href="helloWorld.link.href" target="_blank" rel="noopener">
-        {{ helloWorld.link.text }}
+      <a :href="index.link.href" target="_blank" rel="noopener">
+        {{ index.link.text }}
       </a>
     </p>
   </div>
@@ -19,7 +15,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Index',
   props: {
     msg: {
       type: String,
@@ -28,7 +24,7 @@ export default {
   },
   data: function () {
     return {
-      helloWorld: {
+      index: {
         pageTitle: this.msg,
         messages: [
           {
@@ -37,7 +33,7 @@ export default {
           },
           {
             id: 2,
-            text: 'We will be back up soon!'
+            text: ''
           },
           {
             id: 3,
@@ -55,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-.hello-world {
+.index {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;

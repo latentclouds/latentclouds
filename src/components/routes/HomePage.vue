@@ -1,16 +1,16 @@
 <template>
   <div class="home-page">
-    <HelloWorld msg="This site is under construction." />
+    <Index msg="Let's get started!" />
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import Index from '@/components/Index.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    HelloWorld
+    Index
   }
 }
 </script>
