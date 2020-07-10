@@ -17,6 +17,16 @@ const router = new VueRouter({
       component: HomePage
     },
     {
+      path: '/about-us',
+      name: 'about-us',
+      component: HomePage
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: HomePage
+    },
+    {
       path: '/general-error',
       name: 'general-error',
       component: GeneralErrorPage
