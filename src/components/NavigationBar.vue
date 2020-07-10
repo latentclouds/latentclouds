@@ -80,8 +80,7 @@ export default {
   .navbar-light {
     .title {
       margin-left: 10px;
-      font-size: 36px;
-      line-height: 42px;
+      font-size: 18px;
       color: #5f5d5d;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -109,6 +108,10 @@ export default {
 @media only screen and (min-width: $lg-min-width) {
   .navigation-bar {
     .navbar-light {
+      .title {
+        font-size: 36px;
+        line-height: 42px;
+      }
       .navbar-nav {
         .nav-item {
           &.active {
