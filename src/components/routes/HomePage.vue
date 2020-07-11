@@ -1,18 +1,21 @@
 <template>
   <div class="home-page">
-    <Index msg="Let's get started!" />
+    <NavigationTop />
+    <FeatureSlider />
     <RectangularBoxContainer />
   </div>
 </template>
 
 <script>
-import Index from '@/components/Index.vue'
 import RectangularBoxContainer from '@/components/RectangularBoxContainer.vue'
+import NavigationTop from '@/components/templates/navBar/NavigationTop.vue'
+import FeatureSlider from '@/components/templates/Widget/FeatureSlider.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    Index,
+    NavigationTop,
+    FeatureSlider,
     RectangularBoxContainer
   }
 }
