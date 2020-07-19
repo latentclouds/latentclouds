@@ -78,7 +78,7 @@ export default {
 <style lang="scss">
 .navigation-bar {
   nav {
-    .navbar-light {
+    &.navbar-light {
       &.navbar {
         background-color: #ffffff;
         padding-top: 0;
