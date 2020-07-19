@@ -1,12 +1,12 @@
 <template>
-  <div class="navigation-bar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navigation-bar container">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand d-flex align-items-center" href="/">
         <img
           alt="company logo"
           src="@/assets/logo.png"
-          width="83"
-          height="73"
+          width="53"
+          height="43"
           class="d-inline-block align-top"
           loading="lazy"
         />
@@ -77,28 +77,35 @@ export default {
 
 <style lang="scss">
 .navigation-bar {
-  .navbar-light {
-    .title {
-      margin-left: 10px;
-      font-size: 18px;
-      color: #5f5d5d;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  nav {
+    .navbar-light {
+      &.navbar {
+        background-color: #ffffff;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
 
-    .navbar-nav {
-      .nav-item {
-        min-width: 220px;
-        color: #3d3d3d;
+      .title {
+        margin-left: 10px;
+        font-size: 1rem;
+        color: #5f5d5d;
+      }
 
-        &.active {
-          color: #999999;
-        }
+      .navbar-nav {
+        .nav-item {
+          min-width: 120px;
+          color: #3d3d3d;
 
-        .nav-link {
-          font-size: 32px;
-          line-height: 37px;
-          text-align: center;
-          color: inherit;
+          &.active {
+            color: #999999;
+          }
+
+          .nav-link {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            text-align: center;
+            color: inherit;
+          }
         }
       }
     }
@@ -109,14 +116,14 @@ export default {
   .navigation-bar {
     .navbar-light {
       .title {
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
       }
       .navbar-nav {
         .nav-item {
           &.active {
             border-bottom: 8px solid #27b9e0;
-            margin-bottom: -24px;
+            margin-bottom: -10px;
           }
 
           &:not(:last-child) {

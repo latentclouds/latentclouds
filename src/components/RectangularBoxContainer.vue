@@ -45,31 +45,32 @@ export default {
             height: '_1x',
             width: '6',
             bgType: 'bg-grey'
-          },
-          {
-            id: 4,
-            width: '6',
-            height: '_2x',
-            bgType: 'bg-grey'
-          },
-          {
-            id: 5,
-            width: '6',
-            height: '_2x',
-            bgType: 'bg-white'
-          },
-          {
-            id: 6,
-            width: '6',
-            height: '_2x',
-            bgType: 'bg-white'
-          },
-          {
-            id: 7,
-            width: '6',
-            height: '_2x',
-            bgType: 'bg-grey'
           }
+          //,
+          // {
+          //   id: 4,
+          //   width: '6',
+          //   height: '_2x',
+          //   bgType: 'bg-grey'
+          // },
+          // {
+          //   id: 5,
+          //   width: '6',
+          //   height: '_2x',
+          //   bgType: 'bg-white'
+          // },
+          // {
+          //   id: 6,
+          //   width: '6',
+          //   height: '_2x',
+          //   bgType: 'bg-white'
+          // },
+          // {
+          //   id: 7,
+          //   width: '6',
+          //   height: '_2x',
+          //   bgType: 'bg-grey'
+          // }
         ]
       }
     }
@@ -78,6 +79,8 @@ export default {
 </script>
 
 <style lang="scss">
+//TODO: maintain 10px padding on the rectangular box sides
+
 .rectangular-box-container {
   .row {
     justify-content: space-between;

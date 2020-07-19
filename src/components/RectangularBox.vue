@@ -29,7 +29,8 @@ export default {
 
 <style lang="scss">
 .rectangular-box {
-  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   .box-content {
     display: flex;
@@ -38,10 +39,10 @@ export default {
   }
 
   ._1x {
-    height: 332px;
+    height: 180px;
   }
   ._2x {
-    height: 664px;
+    height: 300px;
   }
 
   .bg-blue {
