@@ -3,7 +3,7 @@ module.exports = {
     process.env.NODE_ENV === 'production'
       ? !!process.env.CI_PROJECT_NAME
         ? '/' + process.env.CI_PROJECT_NAME + '/'
-        : '/'
+        : '/latentclouds/'
       : '/',
   css: {
     loaderOptions: {
